@@ -17,7 +17,6 @@ namespace NetFrameworkTest
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
         }
     }
 }
