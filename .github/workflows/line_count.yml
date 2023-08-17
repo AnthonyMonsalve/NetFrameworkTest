@@ -38,9 +38,7 @@ jobs:
               Set-Content -Path $filePath -Value $content
           } else {
               New-Item -ItemType File -Path $filePath -Value $content
-          }
-      - name: Setup MSBuild
-        run: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe
+          }     
 
       - name: Hacer git clone
         run: |
@@ -48,10 +46,12 @@ jobs:
           git clone https://github.com/AnthonyMonsalve/NetFrameworkTest.git
           #cd NetFrameworkTest
           #msbuild /t:Build /p:Configuration=Release
-          Invoke-Expression -Command "C:\Users\Administrador\documents\compilar.ps1"
+          #Invoke-Expression -Command "C:\Users\Administrador\documents\compilar.ps1"
 
-
-
+      - name: Setup MSBuild
+        run: |
+          cd "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin"
+          MSBuild.exe C:\Users\Administrador\Documents\NetFrameworkTest
 
 
           #Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Users\Administrador\Documents"
