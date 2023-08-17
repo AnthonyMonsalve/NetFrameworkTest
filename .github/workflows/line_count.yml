@@ -24,7 +24,7 @@ jobs:
           Write-Host "El numero de lineas en program.cs es: $line_count"
       - name: Crear archivo
         run: |
-          New-Item -ItemType File -Path C:\actions-runner\archivo.txt" -Value "Contenido del archivo"
+          New-Item -ItemType File -Path "C:\actions-runner\archivo.txt" -Value "Contenido del archivo"
 
 
 
