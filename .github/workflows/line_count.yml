@@ -24,7 +24,18 @@ jobs:
           Write-Host "El numero de lineas en program.cs es: $line_count"
       - name: Crear archivo
         run: |
-          New-Item -ItemType File -Path "C:\actions-runner\archivo.txt" -Value "Contenido del archivo"
+          $url = "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs"
+          $response = Invoke-WebRequest -Uri $url -UseBasicParsing
+          $content = $response.Content
+          
+          # Aquí puedes realizar las operaciones que necesites con el contenido de la respuesta
+          # Por ejemplo, contar las líneas en el archivo
+          $line_count = ($content -split '\r?\n').Count
+          New-Item -ItemType File -Path "C:\actions-runner\archivo.txt" -Value "El archivo Program.cs tiene $line_count lineas"
+
+
+
+
 
 
 
