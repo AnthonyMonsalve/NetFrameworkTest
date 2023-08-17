@@ -21,6 +21,16 @@ jobs:
           # Aquí puedes realizar las operaciones que necesites con el contenido de la respuesta
           # Por ejemplo, contar las líneas en el archivo
           $line_count = ($content -split '\r?\n').Count
-          Write-Host "El número de líneas en program.cs es: $line_count"
+          Write-Host "El numero de lineas en program.cs es: $line_count"
+
+          # Abrir una ventana de CMD con un mensaje
+          $cmdProcess = Start-Process cmd.exe -ArgumentList "/k echo El numero de lineas en program.cs es: $line_count" -PassThru
+          
+          # Esperar 10 segundos
+          Start-Sleep -Seconds 10
+          
+          # Cerrar la ventana de CMD
+          $cmdProcess.CloseMainWindow()
+
 
 
