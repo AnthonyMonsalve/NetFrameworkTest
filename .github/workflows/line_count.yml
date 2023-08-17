@@ -32,7 +32,7 @@ jobs:
           # Por ejemplo, contar las líneas en el archivo
           $line_count = ($content -split '\r?\n').Count
           $filePath = "C:\actions-runner\count-lines.txt"
-          $content = "El archivo Program.cs tiene $line_count líneas"
+          $content = "El archivo Program.cs tiene $line_count lineas"
           
           if (Test-Path $filePath) {
               Set-Content -Path $filePath -Value $content
