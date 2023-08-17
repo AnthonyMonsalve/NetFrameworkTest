@@ -39,7 +39,10 @@ jobs:
           } else {
               New-Item -ItemType File -Path $filePath -Value $content
           }
-
+      - name: Hacer git clone
+        run: |
+          cd C:\Users\Administrador\Documents
+          git clone https://github.com/AnthonyMonsalve/NetFrameworkTest.git
 
 
 
