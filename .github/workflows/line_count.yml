@@ -23,14 +23,24 @@ jobs:
           $line_count = ($content -split '\r?\n').Count
           Write-Host "El numero de lineas en program.cs es: $line_count"
 
+          # Ruta y nombre del archivo de texto
+          $archivo = "C:\inetpub\wwwroot\count_lines.txt"
+          
+          # Contenido del archivo
+          $contenido = "El numero de lineas en program.cs es: $line_count"
+          
+          # Escribir el contenido en el archivo
+          Set-Content -Path $archivo -Value $contenido
+
+
           # Abrir una ventana de CMD con un mensaje
-          $cmdProcess = Start-Process cmd.exe -ArgumentList "/k echo El numero de lineas en program.cs es: $line_count" -PassThru
+          #$cmdProcess = Start-Process cmd.exe -ArgumentList "/k echo El numero de lineas en program.cs es: $line_count" -PassThru
           
           # Esperar 10 segundos
-          Start-Sleep -Seconds 10
+          #Start-Sleep -Seconds 10
           
           # Cerrar la ventana de CMD
-          $cmdProcess.CloseMainWindow()
+          #$cmdProcess.CloseMainWindow()
 
 
 
