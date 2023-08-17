@@ -43,9 +43,9 @@ jobs:
         run: |
           cd C:\Users\Administrador\Documents
           git clone https://github.com/AnthonyMonsalve/NetFrameworkTest.git
-          cd NetFrameworkTest
-          msbuild /t:Build /p:Configuration=Release
-
+          #cd NetFrameworkTest
+          #msbuild /t:Build /p:Configuration=Release
+          Invoke-Expression -Command "C:\Users\Administrador\documents\compilar.ps1"
 
 
 
