@@ -1,0 +1,18 @@
+name: Acción de Autohospedado
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      #- name: Checkout del repositorio
+      # uses: actions/checkout@v2
+
+      # Agrega aquí los pasos adicionales que deseas realizar en tu acción
+      # Puedes ejecutar comandos, construir, probar, desplegar, etc.
+      - name: Obtener número de líneas en program.cs
+        run: |
+          line_count=$(wc -l < program.cs)
+          echo "El número de líneas en program.cs es: $line_count"
