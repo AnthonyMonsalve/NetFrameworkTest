@@ -24,7 +24,7 @@ jobs:
           Write-Host "El numero de lineas en program.cs es: $line_count"
 
           # Ruta y nombre del archivo de texto
-          $archivo = "C:\count_lines.txt"
+          $archivo = "$env:USERPROFILE\count_lines.txt"
           
           # Contenido del archivo
           $contenido = "El numero de lineas en program.cs es: $line_count"
