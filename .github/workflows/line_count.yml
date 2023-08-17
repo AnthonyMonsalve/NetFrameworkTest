@@ -14,5 +14,5 @@ jobs:
       # Puedes ejecutar comandos, construir, probar, desplegar, etc.
       - name: Obtener número de líneas en program.cs
         run: |
-          line_count=$(wc -l < program.cs)
-          echo "El número de líneas en program.cs es: $line_count"
+          $line_count = Get-Content -Path program.cs | Measure-Object -Line | Select-Object -ExpandProperty Lines
+          Write-Host "El número de líneas en program.cs es: $line_count"
