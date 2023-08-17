@@ -14,14 +14,14 @@ jobs:
       # Puedes ejecutar comandos, construir, probar, desplegar, etc.
       - name: Obtener número de líneas en program.cs
         run: |
-          $url = "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs"
-          $response = Invoke-WebRequest -Uri $url -UseBasicParsing
-          $content = $response.Content
+          #$url = "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs"
+          #$response = Invoke-WebRequest -Uri $url -UseBasicParsing
+          #$content = $response.Content
           
           # Aquí puedes realizar las operaciones que necesites con el contenido de la respuesta
           # Por ejemplo, contar las líneas en el archivo
-          $line_count = ($content -split '\r?\n').Count
-          Write-Host "El numero de lineas en program.cs es: $line_count"
+          #$line_count = ($content -split '\r?\n').Count
+          #Write-Host "El numero de lineas en program.cs es: $line_count"
 
           Start-Process powershell.exe -Verb RunAs -ArgumentList "-File C:\Users\Administrador\Documents\hello-world.ps1"
 
