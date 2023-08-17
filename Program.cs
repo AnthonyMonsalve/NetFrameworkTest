@@ -10,6 +10,7 @@ namespace NetFrameworkTest
         static void Main(string[] args)
         {
             Console.WriteLine("INSTAPAGO TEST FINAL con msbuild 2INCHAOOOSTAPAGO TEST FINAL con msbuild 2");
+            Console.WriteLine("INSTAPAGO TEST FINAL con msbuild 2INCHAOOOSTAPAGO TEST FINAL con msbuild 2");
             Console.ReadLine();
         }
     }
