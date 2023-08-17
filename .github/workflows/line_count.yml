@@ -40,7 +40,8 @@ jobs:
               New-Item -ItemType File -Path $filePath -Value $content
           }
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.0.0
+        run: C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\MSBuild\Current\Bin\MSBuild.exe
+
       - name: Hacer git clone
         run: |
           cd C:\Users\Administrador\Documents
