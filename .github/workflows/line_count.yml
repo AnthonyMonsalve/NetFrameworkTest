@@ -31,7 +31,14 @@ jobs:
           # Aquí puedes realizar las operaciones que necesites con el contenido de la respuesta
           # Por ejemplo, contar las líneas en el archivo
           $line_count = ($content -split '\r?\n').Count
-          New-Item -ItemType File -Path "C:\actions-runner\archivo.txt" -Value "El archivo Program.cs tiene $line_count lineas"
+          $filePath = "C:\actions-runner\archivo.txt"
+          $content = "El archivo Program.cs tiene $line_count líneas"
+          
+          if (Test-Path $filePath) {
+              Set-Content -Path $filePath -Value $content
+          } else {
+              New-Item -ItemType File -Path $filePath -Value $content
+          }
 
 
 
