@@ -52,8 +52,8 @@ jobs:
         run: |
           cd "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin"
           Start-Process -FilePath "MSBuild.exe" "C:\Users\Administrador\Documents\NetFrameworkTest"
-
-
+          Write-Host "MSBUILD"
+          
           #Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Users\Administrador\Documents"
 
           # Ruta y nombre del archivo de texto
