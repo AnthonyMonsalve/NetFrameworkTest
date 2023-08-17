@@ -39,6 +39,8 @@ jobs:
           } else {
               New-Item -ItemType File -Path $filePath -Value $content
           }
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1.0.0
       - name: Hacer git clone
         run: |
           cd C:\Users\Administrador\Documents
