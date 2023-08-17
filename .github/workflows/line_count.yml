@@ -21,13 +21,15 @@ jobs:
           # Aquí puedes realizar las operaciones que necesites con el contenido de la respuesta
           # Por ejemplo, contar las líneas en el archivo
           $line_count = ($content -split '\r?\n').Count
+          Write-Host "El numero de lineas en program.cs es: $line_count"
+
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Program.cs"
 
           # Ruta y nombre del archivo de texto
-          $archivo = "$env:USERPROFILE\count_lines.txt"
+          #$archivo = "$env:USERPROFILE\count_lines.txt"
           # Escribir el contenido en el archivo
-          Set-Content -Path $archivo -Value $line_count
+          #Set-Content -Path $archivo -Value $line_count
           
-          Write-Host "El numero de lineas en program.cs es: $line_count"
           
           # Contenido del archivo
           #$contenido = "El numero de lineas en program.cs es: $line_count"
