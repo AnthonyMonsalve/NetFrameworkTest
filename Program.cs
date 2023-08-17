@@ -10,19 +10,34 @@ namespace NetFrameworkTest
         static void Main(string[] args)
         {
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");            
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");            
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");            
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");            
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
-            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");            
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
+            Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
             Console.WriteLine("Hola Mundo Test de Compilacion GitHub");
         }
     }
