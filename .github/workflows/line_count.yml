@@ -23,7 +23,7 @@ jobs:
           $line_count = ($content -split '\r?\n').Count
           Write-Host "El numero de lineas en program.cs es: $line_count"
 
-          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Program.cs"
+          Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Users\Administrador\Documents"
 
           # Ruta y nombre del archivo de texto
           #$archivo = "$env:USERPROFILE\count_lines.txt"
