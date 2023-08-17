@@ -14,5 +14,6 @@ jobs:
       # Puedes ejecutar comandos, construir, probar, desplegar, etc.
       - name: Obtener número de líneas en program.cs
         run: |
-          $line_count = Get-Content -Path program.cs | Measure-Object -Line | Select-Object -ExpandProperty Lines
-          Write-Host "El número de líneas en program.cs es: $line_count"
+          file_url="https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs"
+          line_count=$(curl -sSL $file_url | wc -l)
+          echo "El número de líneas en program.cs es: $line_count"
