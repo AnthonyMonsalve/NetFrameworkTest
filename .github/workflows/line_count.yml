@@ -43,6 +43,7 @@ jobs:
       - name: Hacer git clone
         run: |
           cd C:\Users\Administrador\Documents
+          $fecha = Get-Date
           $fechaString = $fecha.ToString()
           $fechafinal = $fechaString.Replace(" ", "-").Replace(":", "-").Replace("/","-")
           mkdir $fechafinal
