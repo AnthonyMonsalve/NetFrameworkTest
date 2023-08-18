@@ -57,10 +57,7 @@ jobs:
 
       - name: Setup MSBuild
         run: |
-          Write-Host $fechafinal
-          Get-Location
-          Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin\MSBuild.exe" "C:\Users\Administrador\Documents\$fechafinal\NetFrameworkTest"
-          
+          Get-Location       
 
 
 
