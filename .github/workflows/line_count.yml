@@ -55,35 +55,7 @@ jobs:
 
       - name: Setup MSBuild
         run: |
-          cd "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin"
+          Write-Host $fechafinal
           Get-Location
           Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin\MSBuild.exe" "C:\Users\Administrador\Documents\$fechafinal\NetFrameworkTest"
-          Write-Host "MSBUILD"
-          
-          #Invoke-WebRequest -Uri "https://raw.githubusercontent.com/AnthonyMonsalve/NetFrameworkTest/master/Program.cs" -OutFile "C:\Users\Administrador\Documents"
-
-
-
-
-
-
-          # Ruta y nombre del archivo de texto
-          #$archivo = "$env:USERPROFILE\count_lines.txt"
-          # Escribir el contenido en el archivo
-          #Set-Content -Path $archivo -Value $line_count
-          
-          
-          # Contenido del archivo
-          #$contenido = "El numero de lineas en program.cs es: $line_count"
-          
-          # Abrir una ventana de CMD con un mensaje
-          #$cmdProcess = Start-Process cmd.exe -ArgumentList "/k echo El numero de lineas en program.cs es: $line_count" -PassThru
-          
-          # Esperar 10 segundos
-          #Start-Sleep -Seconds 10
-          
-          # Cerrar la ventana de CMD
-          #$cmdProcess.CloseMainWindow()
-
-
 
