@@ -14,6 +14,7 @@ namespace NetFrameworkTest
             Console.ReadLine();
             Console.WriteLine("INSTAPAGO TEST FINAL con msbuild 2INCHAOOOSTAPAGO TEST FINAL con msbuild 2");
             Console.ReadLine();
+            Console.WriteLine("INSTAPAGO TEST FINAL con msbuild 2INCHAOOOSTAPAGO TEST FINAL con msbuild 2");
         }
     }
 }
