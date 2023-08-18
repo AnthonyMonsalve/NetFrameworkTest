@@ -52,8 +52,9 @@ jobs:
           #cd NetFrameworkTest
           #msbuild /t:Build /p:Configuration=Release
           #Invoke-Expression -Command "C:\Users\Administrador\documents\compilar.ps1"
-          Write-Host $fechafinal
-          
+          Write-Host "C:\Users\Administrador\Documents\$fechafinal\NetFrameworkTest"
+          Start-Process -FilePath "C:\Program Files (x86)\Microsoft Visual Studio\2022\buildtools\msbuild\current\bin\MSBuild.exe" "C:\Users\Administrador\Documents\$fechafinal\NetFrameworkTest"
+
       - name: Setup MSBuild
         run: |
           Write-Host $fechafinal
